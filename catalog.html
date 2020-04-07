@@ -7,7 +7,9 @@
   <body>
     <header>
       <a href="index.html"><img src="img/ТЕХНОМАРТ.svg" width="109" height="19" alt="Логотип Техномарта"></a>
-      <!--Здесь форма поиска-->
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <input type="text" placeholder="Поиск:">
+      </form>
       <ul>
         <li><a href="#">Закладки: 0</a></li>
         <li><a href="#">Корзина: 10</a></li>
@@ -16,7 +18,10 @@
       <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
       <p>+7 (812) 555-05-55</p>
       <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <p>Равшан Джамшутович</p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <input type="text" value="Равшан Джамшутович">
+        <input type="submit">
+      </form>
       <ul>
         <li><a href="#">Мои заказы</a></li>
         <li><a href="#">Личный кабинет</a></li>
@@ -43,7 +48,30 @@
       </ul>
       <section>
         <h2>Фильтр:</h2>
-        <!--Место для формы-->
+        <form>
+        <fieldset>
+          <legend>Цена:</legend>
+        </fieldset>
+        <fieldset>
+          <legend>Производители:</legend>
+            <label for="Bosch">Bosch</label>
+            <input type="checkbox" name="Bosch" id="Bosch" checked>
+            <label for="Interskol">Интерскол</label>
+            <input type="checkbox" name="Интерскол" id="Interskol">
+            <label for="Makita">Makita</label>
+            <input type="checkbox" name="Makita" id="Makita" checked>
+            <label for="Dewalt">Dewalt</label>
+            <input type="checkbox" name="Dewalt" id="Dewalt">
+            <label for="Hitachi">Hitachi</label>
+            <input type="checkbox" name="Hitachi" id="Hitachi">
+        </fieldset>
+        <fieldset>
+          <legend>Питание:</legend>
+            <input type="radio" name="power" id="cordless" value="cordless">
+            <input type="radio" name="power" id="electronetwork" value="electronetwork">
+        </fieldset>
+        <input type="submit" value="Показать">
+        </form>
       </section>
       <section>
         <h2>Сортировка:</h2>
