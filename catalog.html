@@ -67,8 +67,12 @@
         </fieldset>
         <fieldset>
           <legend>Питание:</legend>
-            <input type="radio" name="power" id="cordless" value="cordless">
-            <input type="radio" name="power" id="electronetwork" value="electronetwork">
+            <label for="cordless"> Аккумуляторные
+              <input type="radio" name="power" id="cordless " value="cordless" checked>
+            </label>
+            <label for="electronetwork"> Сетевые
+              <input type="radio" name="power" id="electronetwork" value="electronetwork">
+            </label>
         </fieldset>
         <input type="submit" value="Показать">
         </form>
