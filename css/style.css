@@ -531,6 +531,17 @@ background-color: #f9f5f0;
   color: #32425c;
 }
 
+.user-login-navigation a:hover,
+.user-login-navigation a:focus {
+  color: #ee3643;
+}
+
+.user-login-navigation a:active {
+  color: #32425c;
+
+  opacity: 0.3;
+}
+
 .bread-crumbs {
   list-style: none;
 }
@@ -562,6 +573,12 @@ background-color: #f9f5f0;
   background-color: #f2f6f8;
 }
 
+.filter label:active,
+.filter input[type="checkbox"]:active,
+.filter input[type="radio"]:active {
+  opacity: 0.4;
+}
+
 .sorting h2 {
   font-family: "PT Sans";
   font-size: 13px;
@@ -589,6 +606,11 @@ background-color: #f9f5f0;
 
   border: none;
   opacity: 1;
+}
+
+.sorting a:hover {
+  opacity: 1;
+  border-bottom: 1px solid #ee3643;
 }
 
 .filter fieldset {
@@ -638,9 +660,57 @@ background-color: #f9f5f0;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
+  color: #000000;
 
   border: 1px solid #e5e5e5;
   background-color: #ffffff;
 }
 
-.pagination-list .pagination-list-current
+.pagination-list a:hover,
+.pagination-list a:focus {
+  border: 1px solid #bdc6ca;
+}
+
+.pagination-list a:active {
+  border: 1px solid #ee3643;
+}
+
+.pagination-list .pagination-li-current {
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #ee3643;
+}
+
+.description-punches h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.description-punches p {
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.modal-window h2 {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.modal-window a + button {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.modal-write-us label {
+  font-size: 18px;
+  line-height: 18px;
+}
+
