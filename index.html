@@ -54,14 +54,30 @@
         <section class="products-promo">
           <h2 class="visually-hidden">Промо товаров</h2>
           <ul class="promo">
-            <li class="yellow not-slider-li"><a href="#">Материалы<p>На любой вкус</p></a></li>
+            <li class="yellow not-slider-li new"><a href="#">Материалы<p>На любой вкус</p></a></li>
             <li class="blue not-slider-li"><a href="#">Инструмент<p>На все случаи</p></a></li>
             <li class="purple not-slider-li"><a href="#">Техника<p>Для стройки</p></a></li>
-            <li>
-              <ul class="slider">
-                <li class="slider-li"><img src="img/slider-1.jpg " width="620" height="266" alt="Иллюстрация дрели"><button>Назад</button><button>Вперед</button><a class="button" href="catalog.html">Открыть каталог</a></li>
-                <li class="slider-li"><img src="img/slider-2.jpg" width="620" height="266" alt="Иллюстрация перфоратора"><button>Назад</button><button>Вперед</button><a class="button" href="catalog.html">Открыть каталог</a></li>
-              </ul>
+            <li class="main-slider-li">
+              <div>
+                <div>
+                  <input class="visually-hidden" type="radio" name="slider-control" id="first-slide" checked>
+                  <input class="visually-hidden" type="radio" name="slider-control" id="last-slide">
+                  <label class="up-control-left" for="first-slide"><span>Влево</span></label>
+                  <label class="up-control-right" for="last-slide"><span>Вправо</span></label>
+                  <label class="down-control-left" for="first-slide"><span>Первый слайд</span></label>
+                  <label class="down-control-right" for="last-slide"><span></span>Второй слайд</label>
+                </div>
+                <ul class="slider">
+                  <li class="slider-li">
+                    <img src="img/slider-1.jpg " width="620" height="266" alt="Иллюстрация дрели">
+                    <a class="button" href="catalog.html">Открыть каталог</a>
+                  </li>
+                  <li class="slider-li">
+                    <img src="img/slider-2.jpg" width="620" height="266" alt="Иллюстрация перфоратора">
+                    <a class="button" href="catalog.html">Открыть каталог</a>
+                  </li>
+                  </ul>
+              </div>
             </li>
             <div class="right-column-promo">
               <li class="green not-slider-li"><a href="#">Скидки 50%<p>На 350 товаров</p></a></li>
@@ -76,56 +92,64 @@
           </div>
           <ul class="popular-list">
             <li>
-              <a href="#">
-                <div class="order-h3">
-                  <h3>
-                    <p>Перфоратор BOSCH</p>
-                    <p class="last-p-order-h3">BFG 9000</p>
-                  </h3>
-                  <img src="img/Perforator-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
-                </div>
-                <p class="striketrough">32500 Р.</p>
-                <p class="sale">25500 Р.</p>
-              </a>
+              <div class="actions">
+                <a class="buy" href="#">Купить</a>
+                <a class="in-bookmarks" href="#">В закладки</a>
+              </div>
+              <div class="order-h3">
+                <h3>
+                  <p>Перфоратор BOSCH</p>
+                  <p class="last-p-order-h3">BFG 9000</p>
+                </h3>
+                <img src="img/Perforator-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
+              </div>
+              <p class="striketrough">32500 Р.</p>
+              <p class="sale">25500 Р.</p>
             </li>
             <li>
-              <a href="#">
-                <div class="order-h3">
-                  <h3>
-                    <p>Перфоратор BOSCH</p>
-                    <p class="last-p-order-h3">BFG 3000</p>
-                  </h3>
-                  <img src="img/Perforator-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-                </div>
-                <p class="striketrough">22500 Р.</p>
-                <p class="sale">15500 Р.</p>
-              </a>
+              <div class="actions">
+                <a class="buy" href="#">Купить</a>
+                <a class="in-bookmarks" href="#">В закладки</a>
+              </div>
+              <div class="order-h3">
+                <h3>
+                  <p>Перфоратор BOSCH</p>
+                  <p class="last-p-order-h3">BFG 3000</p>
+                </h3>
+                <img src="img/Perforator-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+              </div>
+              <p class="striketrough">22500 Р.</p>
+              <p class="sale">15500 Р.</p>
             </li>
             <li>
-              <a href="#">
-                <div class="order-h3">
-                  <h3>
-                    <p>Перфоратор BOSCH</p>
-                    <p class="last-p-order-h3">BFG 6000</p>
-                  </h3>
-                  <img src="img/Perforator-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
-                </div>
-                <p class="striketrough">30500 Р.</p>
-                <p class="sale">25500 Р.</p>
-              </a>
+              <div class="actions">
+                <a class="buy" href="#">Купить</a>
+                <a class="in-bookmarks" href="#">В закладки</a>
+              </div>
+              <div class="order-h3">
+                <h3>
+                  <p>Перфоратор BOSCH</p>
+                  <p class="last-p-order-h3">BFG 6000</p>
+                </h3>
+                <img src="img/Perforator-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+              </div>
+              <p class="striketrough">30500 Р.</p>
+              <p class="sale">25500 Р.</p>
             </li>
-            <li>
-              <a href="#">
-                <div class="order-h3">
-                  <h3>
-                    <p>Перфоратор BOSCH</p>
-                    <p class="last-p-order-h3">BFG 2000</p>
-                  </h3>
-                  <img src="img/Perforator-4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
-                </div>
-                <p class="striketrough transparrent">12500</p>
-                <p class="sale">12500 Р.</p>
-              </a>
+            <li class="new">
+              <div class="actions">
+                <a class="buy" href="#">Купить</a>
+                <a class="in-bookmarks" href="#">В закладки</a>
+              </div>
+              <div class="order-h3">
+                <h3>
+                  <p>Перфоратор BOSCH</p>
+                  <p class="last-p-order-h3">BFG 2000</p>
+                </h3>
+                <img src="img/Perforator-4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+              </div>
+              <p class="striketrough transparrent">12500</p>
+              <p class="sale">12500 Р.</p>
             </li>
           </ul>
         </section>
