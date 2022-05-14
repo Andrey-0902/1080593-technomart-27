@@ -1,4 +1,6 @@
 body {
+  position: relative;
+
   padding: 0;
   margin: 0;
 
@@ -16,14 +18,21 @@ a {
 }
 
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-  clip: rect(0000);
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -57,12 +66,12 @@ a {
 
 .main-header {
   padding-bottom: 60px;
-  margin-bottom: 60px;
 
   background-color: #f3f7f8;
 }
 
 .user-navigation {
+  height: 47px;
   display: flex;
   align-items: center;
 
@@ -528,18 +537,6 @@ a {
   left: 25px;
 }
 
-/* .slider li {
-  display: none;
-}
-
-#first-slide:checked~.slider li:first-child {         НЕ РАБОТАЮЩИЕ СТИЛИ :(
-  display: block;
-}
-
-#last-slide:checked~.slider li:last-child {
-  display: block;
-} */
-
 .yellow {
   background-image: url("../img/bg-materials.png");
   background-position: top center;
@@ -619,6 +616,7 @@ a {
 
 .popular-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
   margin: 0;
@@ -755,6 +753,10 @@ a {
 }
 
 .popular-list li:hover .actions {
+  display: block;
+}
+
+.current-popular .actions {
   display: block;
 }
 
@@ -1115,8 +1117,6 @@ background-color: #f9f5f0;
   display: inline-block;
 }
 
-/* Нужно довыровнять по горизонтали кнопки + отступы между способами доставки */
-
 .footer-navigation {
   margin-top: 86px;
 
@@ -1216,6 +1216,7 @@ background-color: #f9f5f0;
 
 .footer-copyright .container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -1230,10 +1231,12 @@ background-color: #f9f5f0;
 
 .footer-copyright .copyright-p {
   width: 230px;
-  margin-right: 160px;
+  margin-right: 140px;
 }
 
 .footer-copyright ul {
+  margin-right: 0;
+
   list-style: none;
 }
 
@@ -1349,12 +1352,10 @@ background-color: #f9f5f0;
 }
 
 .footer-feedback {
-  width: 140px;
 }
 
 .footer-developed {
-  margin-left: 49px;
-  width: 96px;
+  width: 100px;
 }
 
 /* Разметка каталога */
@@ -1369,6 +1370,10 @@ background-color: #f9f5f0;
   font-size: 21px;
   line-height: 21px;
   background-color: #ffffff;
+}
+
+.user-navigation-list {
+  width: 443px;
 }
 
 .user-login-navigation {
@@ -1503,12 +1508,24 @@ background-color: #f9f5f0;
 }
 
 .pagination-list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 15px 0;
+  min-height: 50px;
+
   list-style: none;
 }
 
+.pagination-list li:not(:last-child) {
+
+  margin-right: 20px;
+}
+
 .pagination-list a {
+  padding: 15px;
   font-family: "PT Sans";
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 18px;
   color: #000000;
@@ -1528,7 +1545,7 @@ background-color: #f9f5f0;
 
 .pagination-list .pagination-li-current {
   font-family: "PT Sans";
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 18px;
   color: #ffffff;
@@ -1547,6 +1564,32 @@ background-color: #f9f5f0;
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
+}
+
+.inner-page .footer-social {
+  width: 150px;
+}
+
+.inner-page .footer-feedback {
+  /*margin-left: 49px;*/
+}
+
+.inner-page .footer-developed {
+  /*margin-left: 49px;*/
+  width: 115px;
+}
+
+.inner-page .footer-copyright-container {
+  justify-content: space-between;
+}
+
+.inner-page .footer-copyright-container .copyright-p {
+  margin: 0;
+  margin-right: 140px;
+}
+
+.inner-page .footer-copyright-container .footer-social {
+  margin-right: 0;
 }
 
 .modal-window h2 {
